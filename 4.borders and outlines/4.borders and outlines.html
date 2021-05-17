@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>borders and outlines</title>
+
+    <style>
+      /*all border style values*/
+      p.solid {
+        border-style: solid;
+        border-color: #d40404;
+        border-width: 7px; /* px pt cm em etc */
+        border-radius: 10px;
+        outline-style: dashed; /*dotted dashed solid double groove ridge inset outset */
+        outline-width: 5px;
+        outline-color: #a5a52d;
+      }
+      p.dotted {
+        border-style: dotted;
+        color: green; /*if border color is not setted the border color is the element color*/
+        border-width: 25px 10px 4px 35px; /* top right bottom left*/
+        outline: 5px solid #ff6347;
+        outline-offset: 15px; /*space between outlin and border*/
+      }
+      p.dashed {
+        border-style: dashed;
+        border-color: red blue green yellow; /* top right bottom left*/
+        border-width: 20px 5px; /* top and bottom (20px) ----  left and right (5px) */
+      }
+      p.double {
+        border-style: double;
+        border-color: red blue; /* top and bottom (red) ----  left and right (blue) */
+      }
+      p.groove {
+        border-style: groove;
+        border: 5px groove red; /* order: width style color */
+      }
+      p.ridge {
+        border-style: ridge;
+        border-left: 6px solid red; /* border-top border-right border-bottom border-left */
+      }
+      p.inset {
+        border-style: inset;
+        border-bottom: 6px solid red;
+      }
+      p.outset {
+        border-style: outset;
+      }
+      p.none {
+        border-style: none;
+      }
+      p.hidden {
+        border-style: hidden;
+      }
+      p.mix {
+        border-style: dotted dashed solid double; /* top right bottom left */
+      }
+      p.multi {
+        border-top-style: dotted;
+        border-right-style: dashed;
+        border-bottom-style: solid;
+        border-left-style: double;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="solid">A solid border.</p>
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+    <p class="multi">A multiple border.</p>
+  </body>
+</html>
