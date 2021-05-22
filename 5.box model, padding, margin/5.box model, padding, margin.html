@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box model, padding, margin, width, height</title>
+    <style>
+      p {
+        /*margins*/
+        border: #000000 solid;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+        /* shorthand property
+        margin: 100px 100px 150px 80px;  order--> (top) (right) (bottom) (left)
+        margin: 100px 80px 150px;        order--> (top) (right and left) (bottom)
+        margin: 100px 150px;             order--> (top and bottem) (right and left)
+        margin: 100px;                   order--> all sides
+        */
+
+        /*padding*/
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 150px;
+        padding-left: 80px;
+        /* shorthand property
+        padding: 100px 100px 150px 80px;  order--> (top) (right) (bottom) (left)
+        padding: 100px 80px 150px;        order--> (top) (right and left) (bottom)
+        padding: 100px 150px;             order--> (top and bottem) (right and left)
+        padding: 100px;                   order--> all sides
+        */
+
+        width: 300px;
+        box-sizing: border-box;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>first paragraph</p>
+    <p>second paragraph</p>
+    <p>third paragraph</p>
+  </body>
+</html>
