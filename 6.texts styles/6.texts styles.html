@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>texts styles</title>
+    <style>
+      body {
+        background-color: lightgrey;
+        color: blue;
+      }
+
+      h1 {
+        background-color: black;
+        color: white;
+        vertical-align: bottom;
+      }
+      h1.heading1 {
+        text-align: center;
+      }
+
+      h1.heading2 {
+        text-align: left;
+      }
+
+      h1.heading3 {
+        text-align: right;
+      }
+      p.justify {
+        width: 200px;
+        text-align: justify;
+        text-transform: uppercase;
+        text-shadow: 2px 3px 5px red; /*order--> horizontal vertical blur color*/
+      }
+      p.farsi{
+          direction: rtl;
+      }
+      a.decor{
+          text-decoration:none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading1">This is heading 1</h1>
+    <h1 class="heading2">This is heading 2</h1>
+    <h1 class="heading3">This is heading 3</h1>
+    <p>
+      This is an ordinary paragraph. Notice that this text is blue. The default
+      text color for a page is defined in the body selector.
+    </p>
+    <p >Another paragraph.</p>
+    <p class="justify">
+      In my younger and more vulnerable years my father gave me some advice that
+      I've been turning over in my mind ever since. 'Whenever you feel like
+      criticizing anyone,' he told me, 'just remember that all the people in
+      this world haven't had the advantages that you've had.'
+    </p>
+    <p class="farsi">این یک متن فارسی هست باید از راست نوشته بشه</p>
+    <a href="#" class="decor">my link</a>
+  </body> 
+</html>
