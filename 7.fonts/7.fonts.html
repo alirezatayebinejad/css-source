@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fonts</title>
+    <style>
+      @font-face {
+        font-family: "lalezar";
+        src: url("Lalezar-Regular.ttf") format("ttf"),
+          url("Lalezar-Regular.otf") format("otf"),
+          url("Lalezar-Regular.woff") format("woff"),
+          url("Lalezar-Regular.woff2") format("woff2");
+      }
+      body {
+        font-size: 100%;
+      }
+      .p1 {
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        font-size: 30px;
+      }
+
+      .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 1.8em;
+      }
+
+      .p3 {
+        font-family: "lucida Console", "Courier New", monospace;
+        font-weight: bold;
+        font-size: 2.6vw;
+        font-family: "farro";
+        font: italic bold 2.6vw "lucida Console", "Courier New", monospace; /*shorthand property can be used instead of codes above*/
+      }
+      .p4 {
+        font-family: "lalezar"; /* we imported this file with @font-face */
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS font-family</h1>
+    <p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+    <p class="p2">This is a paragraph, shown in the Arial font.</p>
+    <p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+    <p class="p4">در این تکست از فونت لاله زار استفاده شده</p>
+  </body>
+</html>
