@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position</title>
+  <style>
+    /*position static is defult so we can omit that*/
+    .parent1{
+      position: static;
+    }
+    .one1{
+      position: static;
+    }
+    .two1{
+      position: static;
+    }
+    .three1{
+      position: static;
+    }
+    /*postion relative is positioned relative to its normal positon*/
+    .parent2{
+      
+    }
+    .one2{
+      position: relative;
+      top: 15px;
+      left: 20px;
+    }
+    .two2{
+      
+    }
+    .three2{
+      
+    }
+    /*postion absolute with no relative parent or ancestor so it use body to positon from*/
+    .parent3{
+      
+    }
+    .one3{
+      position: absolute;
+      top: 0;
+      left: 200px;
+    }
+    .two3{
+      
+    }
+    .three3{
+      
+    }
+    /*postion absolute with relative parent or ancestor so it use relative parent to position from*/
+    .parent4{
+      position: relative;
+    }
+    .one4{
+      position: absolute;
+      top: 15px;
+      left: 200px;
+    }
+    .two4{
+      
+    }
+    .three4{
+      
+    }
+    /*fixed position element allways stay in a same place*/
+    .parent5{
+
+    }
+    .one5{
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+    }
+    .two5{
+      
+    }
+    .three5{
+      
+    }
+    /*fixed position element allways stay in a same place*/
+    .parent6{
+      height: 200vh;
+    }
+    .one6{
+      position: sticky;
+      top: 20px;/*nessesary*/
+      position: -webkit-sticky; /*for safari browser*/
+      /*internet explorer does not suppor sticky positioning*/
+    }
+    .two6{
+      
+    }
+    .three6{
+      position: relative;
+      z-index:1;
+    }
+  </style>
+</head>
+<body>
+  <h3>STATIC</h3>
+  <div class="parent1" style="background-color:blue;padding: 10px;margin: 20px;">parent
+    <div class="one1" style="background-color:pink;padding: 10px;">one1</div>
+    <div class="two1" style="background-color:yellow;padding: 10px;">two1</div>
+    <div class="three1" style="background-color:orange;padding: 10px;">three1</div>
+  </div>
+  <h3>RELATIVE</h3>
+  <div class="parent2" style="background-color:blue;padding: 10px;margin: 20px;">parent
+    <div class="one2" style="background-color:pink;padding: 10px;">one2</div>
+    <div class="two2" style="background-color:yellow;padding: 10px;">two2</div>
+    <div class="three2" style="background-color:orange;padding: 10px;">three2</div>
+  </div>
+  <h3>ABSOLUTE</h3>
+  <p>with no relative parent or ansector so it uses body tag to positon from</p>
+  <div class="parent3" style="background-color:blue;padding: 10px;margin: 20px;">parent
+    <div class="one3" style="background-color:pink;padding: 10px;">one3</div>
+    <div class="two3" style="background-color:yellow;padding: 10px;">two3</div>
+    <div class="three3" style="background-color:orange;padding: 10px;">three3</div>
+  </div>
+  <h3>ABSOLUTE</h3>
+  <p>with relative parent or ansector so it uses relative tag to positon from</p>
+  <div class="parent4" style="background-color:blue;padding: 10px;margin: 20px;">parent
+    <div class="one4" style="background-color:pink;padding: 10px;">one4</div>
+    <div class="two4" style="background-color:yellow;padding: 10px;">two4</div>
+    <div class="three4" style="background-color:orange;padding: 10px;">three4</div>
+  </div>
+  <h3>FIXED</h3>
+    <div class="parent5" style="background-color:blue;padding: 10px;margin: 20px;">parent
+    <div class="one5" style="background-color:pink;padding: 10px;">one5</div>
+    <div class="two5" style="background-color:yellow;padding: 10px;">two5</div>
+    <div class="three5" style="background-color:orange;padding: 10px;">three5</div>
+  </div>
+  <h3>STICKY</h3>
+  <div class="parent6" style="background-color:blue;padding: 10px;margin: 20px;">parent
+  <div class="one6" style="background-color:pink;padding: 10px;">one6</div>
+  <div class="two6" style="background-color:yellow;padding: 10px;">two6</div>
+  <div class="three6" style="background-color:orange;padding: 10px;">three6</div>
+</div>
+</body>
+</html>
