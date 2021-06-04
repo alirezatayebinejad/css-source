@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selectors advanced</title>
+    <style>
+      /*combinators*/
+
+      div p {
+        background-color: yellow;
+      }
+      div > p {
+        border: black solid 2px;
+      }
+      .p4 + p {
+        background-color: orange;
+      }
+      section ~ p {
+        color: red;
+      }
+
+      /*pseudo classes*/
+
+      a:link {
+        color: grey;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: hotpink;
+      }
+      a:active {
+        color: blue;
+      }
+      .tooltip > span {
+        display: none;
+      }
+      .tooltip:hover span {
+        display: block;
+      }
+      li:first-child {
+        background-color: red;
+      }
+      ol li:first-child {
+        border: blue solid 4px;
+      }
+      li:first-child i {
+        background-color: white;
+      }
+
+      /*pseudo elements*/
+
+      .text::first-line{/*just for block element*/
+        color:green;
+      }
+      .text::first-letter{/*just for block element*/
+        color:blue;
+      }
+      li::marker{
+        color:purple;
+      }
+      .text::selection{/*style where user select in an element*/
+        color: red;
+        background-color: lightpink;
+      }
+
+      /* attribute selector */
+      p[title]{
+        background-color: saddlebrown;
+        display: inline;
+      }
+      p[title="value"]{
+        background-color: lime;
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Combinators</h2>
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <section><p>Paragraph 2 in the div.</p></section>
+      <p>Paragraph 3 in the div.</p>
+      <span><p>Paragraph 4 in the div.</p></span>
+      <p>Paragraph 5 in the div.</p>
+    </div>
+    <p class="p4">Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <p class="p4">Paragraph 6. Not in a div.</p>
+    <p>Paragraph 7. Not in a div.</p>
+
+    <h2>pseudo classes</h2>
+    <a href="google.com">this is a link</a>
+    <div>
+      <p class="tooltip">
+        over me to show p element <br />
+        <span>this is shown hover over p</span>
+      </p>
+    </div>
+    <ul>
+      <li>ul child 1</li>
+      <li>ul child 2</li>
+      <li>ul child 3</li>
+      <li>ul child 4</li>
+    </ul>
+    <ol>
+      <li>ol <i>child</i> 1</li>
+      <li>ol <i>child 1</i></li>
+      <li>ol child 1</li>
+      <li>ol child 1</li>
+    </ol>
+
+    <h2>pseudo elements</h2>
+    <p class="text">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet.
+    </p>
+
+    <h2>attribute selector</h2>
+    <p title="this is a title">it has a title</p>
+    <p title="value">it has a title</p>
+  </body>
+</html>
