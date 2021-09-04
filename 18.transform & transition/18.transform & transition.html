@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D/3D transform & transition</title>
+    <style>
+        .mydiv1{
+            display: inline-block;
+            padding: 50px;
+            background-color: red;
+            transform:translate(40px,80px) rotate(20deg) scale(1.2,2) skewX(-20deg) ;
+        }
+        .mydiv2{
+            display: inline-block;
+            padding: 50px;
+            background-color: red;
+            transform:translate(200px,50px);
+            transition: transform 1s,background-color 5s;
+            transition-delay: 2s;
+
+
+
+        }
+        .mydiv2:hover{
+            background-color: blue;
+
+            transform:translate(400px,50px) rotateX(180deg)   ;
+        }
+    </style>
+  </head>
+  <body>
+    <!--
+        transform:
+        translate(px,px)
+         rotate()
+         scaleX()
+         scaleY()
+         scale()
+         skewX()
+         skewY()
+         skew()
+         matrix(scaleX(),skewY(),skewX(),scaleY(F),translateX(),translateY())
+    -->
+        <!--
+        transition:1s;
+        transition: , , ;
+        transition-property: background-color;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        transition-timing-function: ; //linear ease ease-in ease-out ease-in-out 
+        transition: property duration timing-function delay;
+    -->
+    <div class="mydiv1">
+        2D transform
+    </div>
+    <div class="mydiv2">
+        3D transform
+    </div>
+  </body>
+</html>
