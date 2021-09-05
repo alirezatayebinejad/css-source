@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animations</title>
+    <style>
+        .parent{
+            background-color: blueviolet;
+            width: 400px;
+            height: 400px;
+        }
+        .child{
+            background-color: rgb(39, 39, 39);
+            width: 50%;
+            height: 50%;
+        }
+        .parent:hover .child{
+            animation-name:myanimation;
+            animation-duration: 4s;
+            animation-delay:2s;
+            animation-iteration-count: 3;/* 'infinit' for non stop animation */
+            animation-direction: normal;/* normal reverse alternate alternate-reverse */
+            animation-timing-function:ease-in-out;/* linear ease-in ease-out ease-in-out */
+            animation-fill-mode: forwards;/* none forwards backwards both */
+
+        }
+        @keyframes myanimation{
+            from {transform:translate(0%);}
+            to {transform:translate(100%);}
+            /* or we can use code below instead */
+            0%{
+                transform:translate(0%,0%);
+            }
+            33%{
+                transform:translate(100%,0%);
+                background-color: blue;
+            }
+            66%{
+                transform:translate(100%,100%);
+                background-color: orange;
+
+            }
+            100%{
+                transform:translate(0%,100%);
+                background-color: red;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <!--
+        animation-name
+        animation-duration
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-timing-function
+        animation-fill-mode
+        animation:name duration delay iteration-count direction timing function fill-mod;
+        @keyframes
+    -->
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+  </body>
+</html>
