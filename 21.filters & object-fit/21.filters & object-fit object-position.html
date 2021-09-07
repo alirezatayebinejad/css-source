@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filters & object-fit/position</title>
+    <style>
+        img {
+            width: 33%;
+            height: auto;
+            float: left; 
+            max-width: 235px;
+        }
+
+        .blur {filter: blur(4px);}
+        .brightness {filter: brightness(250%);}
+        .contrast {filter: contrast(180%);}
+        .grayscale {filter: grayscale(100%);}
+        .huerotate {filter: hue-rotate(180deg);}
+        .invert {filter: invert(100%);}
+        .opacity {filter: opacity(50%);}
+        .saturate {filter: saturate(7);}
+        .sepia {filter: sepia(100%);}
+        .shadow {filter: drop-shadow(8px 8px 10px green);}
+
+        #imgwidth{
+            width: 200px;
+            height: 300px;
+            object-fit: cover;/* none cover contain fill */
+            background-color: black;
+            object-position: 100% 50%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="blur" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="brightness" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="contrast" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="grayscale" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="huerotate" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="invert" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="opacity" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="saturate" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="sepia" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img class="shadow" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+    <img id="imgwidth" src="https://w3schools.com/css/pineapple.jpg" alt="Pineapple" width="300" height="300">
+</body>
+</html>
