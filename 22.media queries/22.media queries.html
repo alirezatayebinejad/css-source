@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media queries</title>
+    <style>
+      .column {
+        float: left;
+        width: 20%;
+        padding: 20px;
+      }
+
+      body {
+        background-color: pink;
+      }
+
+      @media screen and (max-width: 992px) {
+        .column {
+          width: 40%;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+      @media screen and (orientation: landscape) {
+        /*landscape or portrate*/
+        body {
+          background-color: lightblue;
+        }
+      }
+      @media screen and (max-width: 900px) and (min-width: 600px) {
+        h1 {
+          color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column" style="background-color: #aaa">
+        <h2>Column 1</h2>
+        <p>Some text..</p>
+      </div>
+
+      <div class="column" style="background-color: #bbb">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+      </div>
+
+      <div class="column" style="background-color: #ccc">
+        <h2>Column 3</h2>
+        <p>Some text..</p>
+      </div>
+
+      <div class="column" style="background-color: #ddd">
+        <h2>Column 4</h2>
+        <p>Some text..</p>
+      </div>
+    </div>
+  </body>
+</html>
