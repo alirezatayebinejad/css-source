@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>counters</title>
-    <style>
-      body {
-        counter-reset: heading1;
-      }
-      h1::before {
-        counter-increment: heading1;
-        content: "part " counter(heading1) ":";
-      }
-      h1 {
-        counter-reset: heading2;
-      }
-      h2::before {
-        counter-increment: heading2;
-        content: counter(heading1) "." counter(heading2) " ";
-      }
-      ol{
-        list-style-type: none;
-        counter-reset: licount;
-      }
-      li::before{
-        counter-increment: licount;
-        content: counters(licount,".")" ";
-      }
-    </style>
-  </head>
-  <body>
-    <h1>second Counters</h1>
-    <h2>this is the first heading2</h2>
-    <h2>this is the second heading2</h2>
-    <h1>second heading1</h1>
-    <h2>this is the third heading2</h2>
-    <h2>this is the forth heading2</h2>
-    <h2>this is the fifth heading2</h2>
-  </body>
-<br><br><br>
-  <ol>
-    <li>item</li>
-    <li>
-      item
-      <ol>
-        <li>item</li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>counters</title>
+        <style>
+            body {
+                counter-reset: heading1;
+            }
+            h1::before {
+                counter-increment: heading1;
+                content: "part " counter(heading1) ":";
+            }
+            h1 {
+                counter-reset: heading2;
+            }
+            h2::before {
+                counter-increment: heading2;
+                content: counter(heading1) "." counter(heading2) " ";
+            }
+            ol {
+                list-style-type: none;
+                counter-reset: licount;
+            }
+            li::before {
+                counter-increment: licount;
+                content: counters(licount, ".") " ";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>second Counters</h1>
+        <h2>this is the first heading2</h2>
+        <h2>this is the second heading2</h2>
+        <h1>second heading1</h1>
+        <h2>this is the third heading2</h2>
+        <h2>this is the forth heading2</h2>
+        <h2>this is the fifth heading2</h2>
+    </body>
+    <br /><br /><br />
+    <ol>
         <li>item</li>
         <li>
-          item
-          <ol>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-          </ol>
+            item
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>
+                    item
+                    <ol>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </li>
+                <li>item</li>
+            </ol>
         </li>
         <li>item</li>
-      </ol>
-    </li>
-    <li>item</li>
-    <li>item</li>
-  </ol>
+        <li>item</li>
+    </ol>
 
-  <ol>
-    <li>item</li>
-    <li>item</li>
-  </ol>
+    <ol>
+        <li>item</li>
+        <li>item</li>
+    </ol>
 </html>

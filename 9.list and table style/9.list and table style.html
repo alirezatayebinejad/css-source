@@ -1,153 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>list styles</title>
-  </head>
-  <style>
-    ul.a {
-      list-style-type: circle;
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>list styles</title>
+    </head>
+    <style>
+        ul.a {
+            list-style-type: circle;
+        }
 
-    ul.b {
-      list-style-type: square;
-    }
+        ul.b {
+            list-style-type: square;
+        }
 
-    ol.c {
-      list-style-type: upper-roman;
-    }
+        ol.c {
+            list-style-type: upper-roman;
+        }
 
-    ol.d {
-      list-style-type: lower-alpha;
-    }
-    ul.e {
-      list-style-image: url("listpic.gif");
-    }
-    ul.f {
-      list-style-position: outside;
-    }
+        ol.d {
+            list-style-type: lower-alpha;
+        }
+        ul.e {
+            list-style-image: url("listpic.gif");
+        }
+        ul.f {
+            list-style-position: outside;
+        }
 
-    ul.g {
-      list-style-position: inside;
-    }
-    ul.h {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
+        ul.g {
+            list-style-position: inside;
+        }
+        ul.h {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-    /*styles for table*/
-    table,
-    th,
-    td {
-      border: 1px solid black;
-      border-collapse: collapse;
-      text-align: center;
-      vertical-align: bottom;
-    }
-    table {
-      width: 100%;
-      height: 200px;
-    }
+        /*styles for table*/
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            vertical-align: center;
+        }
+        table {
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+    <body>
+        <h2>Lists</h2>
+        <p>Example of unordered lists:</p>
+        <ul class="a">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
 
-  </style>
-  <body>
-    <h2>Lists</h2>
-    <p>Example of unordered lists:</p>
-    <ul class="a">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ul>
+        <ul class="b">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
 
-    <ul class="b">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ul>
+        <p>Example of ordered lists:</p>
+        <ol class="c">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ol>
 
-    <p>Example of ordered lists:</p>
-    <ol class="c">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
+        <ol class="d">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ol>
 
-    <ol class="d">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ol>
+        <p>image for lists</p>
+        <ul class="e">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
 
-    <p>image for lists</p>
-    <ul class="e">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ul>
+        <h1>The list-style-position Property</h1>
 
-    <h1>The list-style-position Property</h1>
+        <h2>list-style-position: outside (default):</h2>
+        <ul class="f">
+            <li>
+                Coffee - A brewed drink prepared from roasted coffee beans,
+                which are the seeds of berries from the Coffea plant
+            </li>
+            <li>
+                Tea - An aromatic beverage commonly prepared by pouring hot or
+                boiling water over cured leaves of the Camellia sinensis, an
+                evergreen shrub (bush) native to Asia
+            </li>
+            <li>
+                Coca Cola - A carbonated soft drink produced by The Coca-Cola
+                Company. The drink's name refers to two of its original
+                ingredients, which were kola nuts (a source of caffeine) and
+                coca leaves
+            </li>
+        </ul>
 
-    <h2>list-style-position: outside (default):</h2>
-    <ul class="f">
-      <li>
-        Coffee - A brewed drink prepared from roasted coffee beans, which are
-        the seeds of berries from the Coffea plant
-      </li>
-      <li>
-        Tea - An aromatic beverage commonly prepared by pouring hot or boiling
-        water over cured leaves of the Camellia sinensis, an evergreen shrub
-        (bush) native to Asia
-      </li>
-      <li>
-        Coca Cola - A carbonated soft drink produced by The Coca-Cola Company.
-        The drink's name refers to two of its original ingredients, which were
-        kola nuts (a source of caffeine) and coca leaves
-      </li>
-    </ul>
+        <h2>list-style-position: inside:</h2>
+        <ul class="g">
+            <li>
+                Coffee - A brewed drink prepared from roasted coffee beans,
+                which are the seeds of berries from the Coffea plant
+            </li>
+            <li>
+                Tea - An aromatic beverage commonly prepared by pouring hot or
+                boiling water over cured leaves of the Camellia sinensis, an
+                evergreen shrub (bush) native to Asia
+            </li>
+            <li>
+                Coca Cola - A carbonated soft drink produced by The Coca-Cola
+                Company. The drink's name refers to two of its original
+                ingredients, which were kola nuts (a source of caffeine) and
+                coca leaves
+            </li>
+        </ul>
 
-    <h2>list-style-position: inside:</h2>
-    <ul class="g">
-      <li>
-        Coffee - A brewed drink prepared from roasted coffee beans, which are
-        the seeds of berries from the Coffea plant
-      </li>
-      <li>
-        Tea - An aromatic beverage commonly prepared by pouring hot or boiling
-        water over cured leaves of the Camellia sinensis, an evergreen shrub
-        (bush) native to Asia
-      </li>
-      <li>
-        Coca Cola - A carbonated soft drink produced by The Coca-Cola Company.
-        The drink's name refers to two of its original ingredients, which were
-        kola nuts (a source of caffeine) and coca leaves
-      </li>
-    </ul>
+        <h2>Remove bullets, margin and padding:</h2>
+        <ul class="h">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
+        <br /><br />
 
-    <h2>Remove bullets, margin and padding:</h2>
-    <ul class="h">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Coca Cola</li>
-    </ul>
-    <br /><br />
-
-    <!--table-->
-    <table>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-      </tr>
-      <tr>
-        <td>Peter</td>
-        <td>Griffin</td>
-      </tr>
-      <tr>
-        <td>Lois</td>
-        <td>Griffin</td>
-      </tr>
-    </table>
-  </body>
+        <!--table-->
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+            <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+            </tr>
+            <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+            </tr>
+        </table>
+    </body>
 </html>

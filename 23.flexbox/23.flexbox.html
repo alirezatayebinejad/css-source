@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flexbox</title>
-    <style>
-      .flex-container {
-        background-color: rgb(248, 165, 32);
-        padding: 5px 0px;
-        height: 500px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: flex-end;
-        align-content: space-around;
-      }
-      .items {
-        background-color: #f1f1f1;
-        margin: 10px;
-        padding: 20px;
-        font-size: 30px;
-      }
-      .div1 {
-        width: 100px;
-        height: 200px;
-      }
-      .div2 {
-        width: 100px;
-        order:4;
-      }
-      .div3 {
-        width: 100px;
-        flex-grow: 3;
-      }
-      .div4 {
-        width: 100px;
-        flex-shrink: 0;
-        align-self: center;
-      }
-      .div5 {
-        width: 100px;
-        flex-basis: 200px
-      }
-    </style>
-  </head>
-  <body>
-    <div class="flex-container">
-      <div class="items div1">1</div>
-      <div class="items div2">2</div>
-      <div class="items div3">3</div>
-      <div class="items div4">4</div>
-      <div class="items div5">5</div>
-    </div>
-    <!-- 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>flexbox</title>
+        <style>
+            .flex-container {
+                background-color: rgb(248, 165, 32);
+                padding: 5px 0px;
+                height: 500px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+                align-items: flex-end;
+                align-content: space-around;
+            }
+            .items {
+                background-color: #f1f1f1;
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+            .div1 {
+                width: 100px;
+                height: 200px;
+            }
+            .div2 {
+                width: 100px;
+                order: 4;
+            }
+            .div3 {
+                width: 100px;
+                flex-grow: 3;
+            }
+            .div4 {
+                width: 100px;
+                flex-shrink: 0;
+                align-self: center;
+            }
+            .div5 {
+                width: 100px;
+                flex-basis: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="items div1">1</div>
+            <div class="items div2">2</div>
+            <div class="items div3">3</div>
+            <div class="items div4">4</div>
+            <div class="items div5">5</div>
+        </div>
+        <!-- 
         displaye:flex;
 
         --contrainer--
@@ -73,5 +73,5 @@
         flex
         align-self
      -->
-  </body>
+    </body>
 </html>

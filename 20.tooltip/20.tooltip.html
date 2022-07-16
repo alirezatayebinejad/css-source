@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tooltip</title>
-    <style>
-      .tooltip {
-        position: relative;
-        display: inline-block;
-        margin-left: 30px;
-      }
-      .tooltip .tooltiptext {
-        background-color: gray;
-        border-radius: 5px;
-        padding: 5px;
-        width: 120px;
-        color: white;
-        text-align: center;
-        visibility: hidden;
-        opacity: 0;
-        transition:opacity 0.5s;
-        /* positioning the tooltiptext */
-        position: absolute;
-        z-index: 1;
-        top: 100%;
-        left: -15px;
-      }
-      .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-      }
-
-      .tooltip .tooltiptext::after {
-        content: "";
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent gray transparent;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="tooltip">
-      Hover over me
-      <span class="tooltiptext">this is a tooltip</span>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>tooltip</title>
+        <style>
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                margin-left: 30px;
+            }
+            .tooltip .tooltiptext {
+                background-color: gray;
+                border-radius: 5px;
+                padding: 5px;
+                width: 120px;
+                color: white;
+                text-align: center;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 0.5s;
+                /* positioning the tooltiptext */
+                position: absolute;
+                z-index: 1;
+                top: 100%;
+                left: -15px;
+            }
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                opacity: 1;
+            }
+            /*for little arrow on the tooltip*/
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: transparent transparent gray transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tooltip">
+            Hover over me
+            <span class="tooltiptext">this is a tooltip</span>
+        </div>
+    </body>
 </html>
